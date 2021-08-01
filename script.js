@@ -7,5 +7,6 @@ burger.addEventListener('click', () => {
         modal.setAttribute('style', 'display: none')
     } else {
         modal.setAttribute('style', 'display: revert')
+        modal.classList.toggle('is-active')
     }
 })
