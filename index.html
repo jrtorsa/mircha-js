@@ -16,25 +16,45 @@
 <body>
     <div class="title">Ejercicios del DOM</div>
     <section class="container">
-        <div class="exercise-1">
-            <span class="section-title">Seccion 1</span>
-        </div>
+        <section id="section-1" class="section">
+            <h2>Reloj Digital y Alarma</h2>
+            <div id="clock" class="clock"></div>
+            <button id="activar-reloj">Iniciar Reloj</button>
+            <button id="desactivar-reloj">Detener Reloj</button>
+            <button id="activar-alarma">Iniciar Alarma</button>
+            <button id="desactivar-alarma">Detener Alarma</button>
+        </section>
+        <section id="section-2" class="section">
+            <h2>Seccion 2</h2>
+        </section>
+        <section id="section-3" class="section">
+            <h2>Seccion 3</h2>
+        </section>
+        <section id="section-4" class="section">
+            <h2>Seccion 4</h2>
+        </section>
+        <section id="section-5" class="section">
+            <h2>Seccion 5</h2>
+        </section>
     </section>
+
     <section id="myModal" class="modal">
         <div class="modal-content">
-            <span class="section-content">Section 1</span>
-            <span class="section-content">Section 2</span>
-            <span class="section-content">Section 3</span>
-            <span class="section-content">Section 4</span>
-            <span class="section-content">Section 5</span>
+            <span class="section-content"><a href="#section-1">Reloj Digital y Alarma</a></span
+        >
+        <span class="section-content"><a href="#section-2">Section 2</a></span>
+            <span class="section-content"><a href="#section-3">Section 3</a></span>
+            <span class="section-content"><a href="#section-4">Section 4</a></span>
+            <span class="section-content"><a href="#section-5">Section 5</a></span>
         </div>
     </section>
+
     <button class="hamburger hamburger--spin-r" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
 </body>
-<script src="./script.js"></script>
+<script type="module" src="./script.js"></script>
 
 </html>

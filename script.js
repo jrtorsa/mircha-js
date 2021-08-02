@@ -1,12 +1,7 @@
-const burger = document.querySelector('.hamburger')
-const modal = document.querySelector('#myModal')
+import { burgerMenu } from "./dom/burgerMenu.js"
+import { digitalClock, alarm } from "./dom/clock.js"
 
-burger.addEventListener('click', () => {
-    const active = burger.classList.toggle('is-active')
-    if (!active) {
-        modal.setAttribute('style', 'display: none')
-    } else {
-        modal.setAttribute('style', 'display: revert')
-        modal.classList.toggle('is-active')
-    }
+document.addEventListener('DOMContentLoaded', e => {
+    burgerMenu(".hamburger", "#myModal", ".section-content")
+    digitalClock("#clock", "#activar-reloj", "#desactivar-reloj")
 })
